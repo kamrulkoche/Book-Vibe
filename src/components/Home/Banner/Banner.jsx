@@ -12,7 +12,7 @@ const Banner = () => {
             </button>
           </div>
           <div className="justify-center flex">
-            <img src="/src/assets/images/banner.png" alt="" />
+            <img src="images/banner.png" alt="" />
           </div>
         </div>
       </div>
