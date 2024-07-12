@@ -1,0 +1,17 @@
+nav a{
+    margin-right:20px ;
+}
+
+nav a.active{
+    /* background-color: greenyellow; */
+    border-style: solid;
+    border-color: #23BE0A;
+    font-size: 18px;
+    color: #23BE0A;
+    font-weight: 600;
+    border-width: 2px;
+    padding : 8px 16px;
+    border-radius: 8px;
+    transition-duration: 500ms;
+
+}
