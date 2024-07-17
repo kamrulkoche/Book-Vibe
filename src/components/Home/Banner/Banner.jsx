@@ -7,9 +7,11 @@ const Banner = () => {
             <h2 className="text-5xl font-bold leading-relaxed mb-16">
               Books to freshen up your bookshelf
             </h2>
-            <button className="bg-[#23BE0A] text-white text-xl font-bold hover:bg-white hover:text-black duration-500 px-5 py-3 rounded-lg border border-[#23BE0A] ">
-              View The List
-            </button>
+            <a href="listed_books">
+              <button className="bg-[#23BE0A] text-white text-xl font-bold hover:bg-white hover:text-black duration-500 px-5 py-3 rounded-lg border border-[#23BE0A] ">
+                View The List
+              </button>
+            </a>
           </div>
           <div className="justify-center flex">
             <img src="images/banner.png" alt="" />

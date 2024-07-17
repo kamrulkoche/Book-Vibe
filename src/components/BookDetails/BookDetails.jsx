@@ -1,11 +1,12 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import BooksAdded from "../BooksAdded/BooksAdded";
 // import { banner } from "../../../public/images/banner.png";
 const BookDetails = () => {
   const books = useLoaderData();
   const { id } = useParams();
   const idInt = parseInt(id);
   const book = books.find((book) => book.id === idInt);
-  //   console.log(book);
+
   return (
     <div className="grid md:grid-cols-2 items-center ">
       <div className="flex justify-center mb-16 lg:mb-0 ">
@@ -66,13 +67,9 @@ const BookDetails = () => {
             </table>
           </div>
         </div>
+
         <div className="mt-4 flex">
-          <button className="border border-gray-400 text-lg font-bold px-8 py-3 rounded-xl">
-            Read
-          </button>
-          <button className="border text-white bg-[#50B1C9] border-[#50B1C9] text-lg font-bold px-8 py-3 rounded-xl ml-5">
-            Wishlist
-          </button>
+          <BooksAdded />
         </div>
       </div>
     </div>
