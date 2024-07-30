@@ -5,6 +5,7 @@ import {
 } from "../../utility/localStorage";
 import ListedBookCard from "../ListedBookCard/ListedBookCard";
 import SortByDropdown from "./SortByDropdown/SortByDropdown";
+import { Helmet } from "react-helmet-async";
 
 const ListedBooks = () => {
   const [books, setBooks] = useState([]);
@@ -51,6 +52,10 @@ const ListedBooks = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>listed_books </title>
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+      </Helmet>
       <h2 className="bg-gray-100 text-3xl font-bold py-6 rounded-2xl text-center">
         Books
       </h2>
